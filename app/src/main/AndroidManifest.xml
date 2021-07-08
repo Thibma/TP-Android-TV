@@ -16,12 +16,19 @@
         android:banner="@drawable/banner"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Leanback">
-        <activity android:name=".ui.MainActivity">
+        android:theme="@style/ThemeThibma">
+        <activity android:name=".ui.MainActivity"
+            android:theme="@style/ThemePref">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.DetailActivity" />
+        <activity android:name=".ui.PopupActivity" />
+        <activity android:name=".ui.SettingsActivity"
+            android:theme="@style/ThemePref">
         </activity>
     </application>
 

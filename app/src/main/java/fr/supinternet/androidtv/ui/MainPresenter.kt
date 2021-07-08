@@ -19,6 +19,8 @@ class MainPresenter : Presenter() {
         val titleText = movie.name
         val contentText = movie.rating
         movie.posterURL?.let { holder.loadImage(it) }
+        img.titleText = titleText
+        img.contentText = contentText.toString()
     }
 
     override fun onUnbindViewHolder(viewHolder: ViewHolder?) {

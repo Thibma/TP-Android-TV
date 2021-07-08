@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="Connectivité" >
+        <ListPreference android:title="Séléctionnez un Wifi" android:entryValues="@array/pref_wifi_networks"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Connectivité" >
+        <CheckBoxPreference android:title="Fait-il beau ?" />
+        <SwitchPreference android:title="Fait-il beau ?" />
+        <EditTextPreference android:title="Fait-il beau ?" />
+    </PreferenceCategory>
+</PreferenceScreen>

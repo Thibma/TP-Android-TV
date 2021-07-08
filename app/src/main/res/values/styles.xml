@@ -7,4 +7,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ThemeThibma" parent="Theme.Leanback.GuidedStep">
+        <item name="guidedActionsBackground">@color/guidedstep_actions_background</item>
+        <item name="guidedActionsBackgroundDark">@color/guidedstep_actions_dark_background</item>
+    </style>
+
+    <style name="ThemePref" parent="Theme.Leanback">
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Leanback</item>
+    </style>
+
 </resources>

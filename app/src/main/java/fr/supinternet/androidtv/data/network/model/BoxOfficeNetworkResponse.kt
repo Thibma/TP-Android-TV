@@ -4,6 +4,7 @@ import fr.supinternet.androidtv.data.network.api.omdb.model.MovieDetailsAPINetwo
 import fr.supinternet.androidtv.data.network.api.trakt.model.MovieAPINetworkResponse
 import fr.supinternet.androidtv.data.network.api.trakt.model.MovieOverviewAPINetworkResponse
 import fr.supinternet.androidtv.data.network.api.trakt.model.RelatedMovieAPINetworkResponse
+import java.io.Serializable
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -24,7 +25,7 @@ data class Movie(
     val rating: Double?,
     val revenue: Int,
     val relatedMovies: List<RelatedBoxOfficeMovie>?
-) {
+) : Serializable {
 
     constructor(
         boxOffice: MovieAPINetworkResponse,
